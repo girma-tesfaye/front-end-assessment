@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+.base {
+  background: #7f97a7;
+  padding: 10px;
+  border-radius: 40px;
+  ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.typo-overflow {
+  white-space: nowrap; 
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} 
+
+.custom-icon-left {
+  width: 10px;
+  height: 10px;
+  border: 2px solid slategray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.custom-icon-right {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: 10px;
+  left: -11px;
+  border: 2px solid slategray;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.custom-icon-middle {
+  position: relative;
+  top: 12px;
+  left: -9px;
+  width: 5px;
+  height: 5px;
+  border: 2px solid slategray;
+}
+
+.help {
+  color: #c8af71;
+  padding: 0 20px;
+}
+
+ol  {
+  list-style: none;
+  counter-reset: cupcake;
+  padding-right: 20px;
+}
+
+li {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+li p {
+  padding-left: 35px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li div {
+  padding-left: 20px;
+}
+
+li div div {
+  display: flex;
+  padding: 0 30px;
+}
+
+li div div span{
+  padding: 0 3px;
+}
+
+ol li {
+  counter-increment: cupcake;
+}
+
+ol li:before {
+  content: counters(cupcake, '.') ' ';
+  /* Whatever custom styles you want here */
+  color: #4c5963;
+  font-weight: bold;
+  font-family: cursive;
 }
