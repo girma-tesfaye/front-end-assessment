@@ -6,6 +6,7 @@ import { FiSearch } from "react-icons/fi";
 import { MdUpdate, MdEventNote, MdOutlineArrowForwardIos } from "react-icons/md";
 import { HiOutlineDatabase } from "react-icons/hi";
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import {FiGitCommit} from 'react-icons/fi';
 
 const useStyles = makeStyles((theme) => ({
     wrapper: {
@@ -93,7 +94,7 @@ const IconsBar = () => {
             <hr style={{mixBlendMode: "color-burn", margin: "10px 0"}}/>
             <MdOutlineArrowForwardIos className={classes.icon}/>
             <div style={{position: "relative", bottom: "-12%"}}>
-                <BsFillPlayBtnFill className={classes.icon}/>
+                <FiGitCommit className={classes.icon}/> 
                 <AccountCircleIcon className={classes.avatarIcon}/>
             </div>
         </div>
